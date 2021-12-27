@@ -20,21 +20,22 @@ body::before {
   position: relative;
   display: inline-block;
   padding-right: calc(0.75rem);
-  /* padding-left: calc(2rem - 0.75rem); */
   padding-top: calc(0.625rem / 4);
   padding-bottom: calc(0.625rem / 4);
   top: -0.1rem;
-  /* 
-  transform: translateY(-50%); */
 }
 
-/* .btn-labeled {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-*/
 .btn-custom {
-  /* margin-bottom: 10px; */
   padding: 0.4rem 2rem;
+}
+
+.custom-arrow-box {
+  margin-top: -1rem;
+}
+.custom-arrow-box .custom-arrow-icon {
+  font-size: 100px;
+}
+
+.custom-img {
+  max-width: 180px;
 }
