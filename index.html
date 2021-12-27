@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="./styles/app.css" />
   </head>
   <body>
@@ -193,6 +194,37 @@
         </div>
     </section>
 
+    <!-- Contact & Map -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4 fw-bold">Contact Info</h2>
+                    <div class="pb-4">
+                        <ul class="list-group list-group-flush mb-3 lead">
+                            <li class="list-group-item">
+                                <span class="fw-bold text-end p-2 mx-3">Phone Number:</span><span class="text-start"> (555) 555-5555</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold text-end p-2 mx-3">Street Address:</span><span class="text-start"> 20 Ramblewood Street, Whitehall, PA 18052</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold text-end p-2 mx-3">Email Address:</span><span class="text-start"> bookit@email.com</span>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-custom btn-labeled btn-success fw-bold ms-md-2">
+                            <span class="btn-label"><i class="bi bi-envelope"></i></i></span
+                            >Email Us
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="p-5 bg-dark text-white text-center position-relative">
         <div class="container">
@@ -205,14 +237,24 @@
 
     <!-- Scripts -->
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-      crossorigin="anonymous"
-    ></script>
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"
+  ></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+  <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoidmFtYXJhZ2tvcyIsImEiOiJja3hwNG14MDIwYWNlMndwNGtxY2g4bm5sIn0.yO6rnk-3iLnxPw-oRJwIqg';
+      var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [-71.060982, 42.35725],
+      zoom: 18
+      });
+  </script>
   </body>
 </html>
