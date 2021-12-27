@@ -1,0 +1,25 @@
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+
+.btn-label {
+  position: relative;
+  display: inline-block;
+  padding-right: calc(1rem);
+  /* padding-left: calc(2rem - 0.75rem); */
+  padding-top: calc(0.625rem / 4);
+  padding-bottom: calc(0.625rem / 4);
+}
+
+/* .btn-labeled {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+*/
+.btn {
+  /* margin-bottom: 10px; */
+  padding: 0 2rem;
+}
