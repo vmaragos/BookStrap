@@ -27,7 +27,7 @@
       class="navbar navbar-expand-lg bg-white navbar-light py-4 fixed-top"
     >
       <div class="container">
-        <a href="#" class="navbar-brand text-success">Book -It</a>
+        <a href="#" class="navbar-brand text-success lead">Book -It</a>
 
         <button
           class="navbar-toggler"
@@ -37,17 +37,17 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navmenu">
+        <div class="collapse navbar-collapse lead" id="navmenu">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
+            <li class="nav-item me-4">
               <a href="#" class="nav-link text-success">Categories</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item me-4">
               <a href="#" class="nav-link text-success"
                 >Today's Recommendation</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item me-4">
               <a href="#" class="nav-link text-success">FAQs</a>
             </li>
             <li class="nav-item">
@@ -194,11 +194,31 @@
         </div>
     </section>
 
+    <!-- Today's Recommendation -->
+    <section class="bg-white text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div class="text-center pb-5">
+                    <h3 class="fw-bold">Today's Recommendation</h3>
+                    <img src="./images/12RulesForLife_JordanPeterson.jpg" class="mt-5 img-fluid" style="max-width: 180px;" alt="">
+                    <h3 class="pt-4 text-success fw-bold">12 Rules For Life</h3>
+                    <p class="lead">by Jordan Peterson</p>
+                    <button type="button" class="btn btn-custom btn-labeled btn-success mt-2 fw-bold">
+                        <span class="btn-label"><i class="bi bi-eye"></i></i></span
+                        >View
+                    </button>
+                </div>
+                <img src="./images/undraw_book_lover_re_rwjy.svg" alt="" class="img-fluid align-self-end w-50 d-none d-sm-block">
+            </div>
+        </div>
+    </section>
+
     <!-- FAQs Accordion -->
     <section class="p-5 bg-success" id="questions">
         <div class="container">
             <h2 class="text-center text-white fw-bold">Frequently Asked Questions</h2>
             <div class="accordion accordion-flush p-5 bg-success" id="accordionFlushExample">
+                <!-- Item -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -209,6 +229,7 @@
                     <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit praesentium dolores veniam amet, quia accusamus!</div>
                   </div>
                 </div>
+                <!-- Item -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
@@ -219,6 +240,7 @@
                     <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, sapiente.</div>
                   </div>
                 </div>
+                <!-- Item -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
@@ -229,6 +251,7 @@
                     <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aliquam dolorum beatae earum sunt eos!</div>
                   </div>
                 </div>
+                <!-- Item -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
@@ -261,7 +284,7 @@
                                 <span class="fw-bold text-end p-2 mx-3">Email Address:</span><span class="text-start"> bookit@email.com</span>
                             </li>
                         </ul>
-                        <button type="button" class="btn btn-custom btn-labeled btn-success fw-bold ms-md-2">
+                        <button type="button" class="btn btn-custom btn-labeled btn-success fw-bold ms-4">
                             <span class="btn-label"><i class="bi bi-envelope"></i></i></span
                             >Email Us
                         </button>
