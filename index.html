@@ -40,18 +40,18 @@
         <div class="collapse navbar-collapse lead" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item me-4">
-              <a href="#" class="nav-link text-success">Categories</a>
+              <a href="#categories" class="nav-link text-success">Categories</a>
             </li>
             <li class="nav-item me-4">
-              <a href="#" class="nav-link text-success"
+              <a href="#today's_recommendation" class="nav-link text-success"
                 >Today's Recommendation</a
               >
             </li>
             <li class="nav-item me-4">
-              <a href="#" class="nav-link text-success">FAQs</a>
+              <a href="#faq" class="nav-link text-success">FAQs</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-success">Contact</a>
+              <a href="#contact" class="nav-link text-success">Contact</a>
             </li>
           </ul>
         </div>
@@ -102,6 +102,11 @@
       </div>
     </section>
 
+    <!-- Arrow -->
+    <div class="position-absolute w-100 bg-transparent text-center" style="margin-top: 1.55rem;">
+        <i class="bi bi-caret-down-fill text-white h1"></i>
+    </div>
+
     <!-- Categories -->
     <section class="p-5 mt-5 bg-success" id="categories">
         <div class="container">
@@ -151,24 +156,8 @@
         </div>
     </section>
 
-    <!-- Newsletter -->
-    <!-- <section class="bg-dark text-light p-5">
-        <div class="container">
-            <div class="d-md-flex justify-content-between align-items-center">
-                <h3 class="mb-3 mb-md-0">Sign Up to our Newsletter</h3>
-                <div class="input-group news-input">
-                    <input type="text" class="form-control" placeholder="Write Your Email">
-                    <button type="button" class="btn btn-custom btn-labeled btn-success fw-bold">
-                        <span class="btn-label"><i class="bi bi-play"></i></i></span
-                        >View
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <!-- Newsletter new -->
-    <section class="p-5 bg-dark" id="categories">
+    <section class="p-5 bg-dark">
         <div class="container">
             <div class="row g-4 justify-content-center align-items-center">
                 <div class="col-md-6 col-lg-5">
@@ -195,7 +184,7 @@
     </section>
 
     <!-- Today's Recommendation -->
-    <section class="bg-white text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+    <section class="bg-white text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start" id="today's_recommendation">
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <div class="text-center pb-5">
@@ -214,7 +203,7 @@
     </section>
 
     <!-- FAQs Accordion -->
-    <section class="p-5 bg-success" id="questions">
+    <section class="p-5 bg-success" id="faq">
         <div class="container">
             <h2 class="text-center text-white fw-bold">Frequently Asked Questions</h2>
             <div class="accordion accordion-flush p-5 bg-success" id="accordionFlushExample">
@@ -267,7 +256,7 @@
     </section>
 
     <!-- Contact & Map -->
-    <section class="p-5">
+    <section class="p-5" id="contact">
         <div class="container">
             <div class="row g-4">
                 <div class="col-md">
