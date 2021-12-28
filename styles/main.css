@@ -11,11 +11,10 @@ body::before {
 }
 
 /* @media (min-width: 768px) {
-  .news-input {
-    width: 50%;
-  }
-} */
-
+        .news-input {
+          width: 50%;
+        }
+      } */
 .btn-label {
   position: relative;
   display: inline-block;
@@ -32,6 +31,7 @@ body::before {
 .custom-arrow-box {
   margin-top: -1rem;
 }
+
 .custom-arrow-box .custom-arrow-icon {
   font-size: 100px;
 }
@@ -39,3 +39,4 @@ body::before {
 .custom-img {
   max-width: 180px;
 }
+/*# sourceMappingURL=main.css.map */
